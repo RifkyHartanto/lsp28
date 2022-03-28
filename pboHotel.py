@@ -14,7 +14,7 @@ lama_inap = int(input("Masukan Lama Menginap : "))
 
 
 #tipe superior
-if tipe_kamar == "Superior":
+if tipe_kamar == "superior":
     if lama_inap <= 2:
         total_harga = 100000*lama_inap
     elif lama_inap <= 4:
@@ -22,7 +22,7 @@ if tipe_kamar == "Superior":
     else:
         total_harga = 80000*lama_inap
 #tipe deluxe
-if tipe_kamar == "Deluxe":
+if tipe_kamar == "deluxe":
     if lama_inap <= 2:
         total_harga = 150000*lama_inap
     elif lama_inap <= 4:
@@ -31,7 +31,7 @@ if tipe_kamar == "Deluxe":
         total_harga = 120000*lama_inap
 
 #tipe premium
-if tipe_kamar == "Premium":
+if tipe_kamar == "premium":
     if lama_inap <= 2:
         total_harga = 200000*lama_inap
     elif lama_inap <= 4:
@@ -44,3 +44,44 @@ garis()
 print(" Tipe Kamar yang dipilih : ",(tipe_kamar))
 print(" Lama Menginap : ",(lama_inap), " Hari ")
 print(" Total Harga yang dibayar adalah : ", (total_harga))
+
+tombol = input("Kembali ke menu utama ? (Y/N)")
+if tombol == "Y":
+    #input data
+    tipe_kamar = input("Masukan Tipe Kamar : ")
+    lama_inap = int(input("Masukan Lama Menginap : "))
+
+
+    #tipe superior
+    if tipe_kamar == "superior":
+        if lama_inap <= 2:
+            total_harga = 100000*lama_inap
+        elif lama_inap <= 4:
+            total_harga = 90000*lama_inap
+        else:
+            total_harga = 80000*lama_inap
+    #tipe deluxe
+    if tipe_kamar == "deluxe":
+        if lama_inap <= 2:
+            total_harga = 150000*lama_inap
+        elif lama_inap <= 4:
+            total_harga = 135000*lama_inap
+        else:
+            total_harga = 120000*lama_inap
+
+    #tipe premium
+    if tipe_kamar == "premium":
+        if lama_inap <= 2:
+            total_harga = 200000*lama_inap
+        elif lama_inap <= 4:
+            total_harga = 180000*lama_inap
+        else:
+            total_harga = 160000*lama_inap
+
+    #total harga menginap
+    garis()
+    print(" Tipe Kamar yang dipilih : ",(tipe_kamar))
+    print(" Lama Menginap : ",(lama_inap), " Hari ")
+    print(" Total Harga yang dibayar adalah : ", (total_harga))
+else:
+    print("Terima Kasih telah menggunakan hotel kami")
